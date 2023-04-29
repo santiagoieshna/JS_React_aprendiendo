@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* transition: all 0.8s linear; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    /* background-color: #000; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+}
+#tittleh1{
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    padding: 1.5%;
+    width: max-content;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+    background: rgb(2, 0, 36);
+
+    background: radial-gradient(circle,
+            rgba(2, 0, 36, 1) 75%,
+            rgba(0, 26, 60, 1) 85%,
+            rgba(0, 57, 68, 1) 100%);
+
+    /* background: radial-gradient(circle,
+            rgba(2, 0, 36, 1) 81%,
+            rgba(0, 26, 60, 1) 91%,
+            rgba(0, 67, 80, 1) 100%); */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+        0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11),
+        0 8px 8px rgba(0, 0, 0, 0.11),
+        0 16px 16px rgba(0, 0, 0, 0.11),
+        0 32px 32px rgba(0, 0, 0, 0.11);
+    /* overflow: hidden; */
+}
+
+/* No hace nada */
+/* button {
+    width: 100%;
+    height: 100%;
+    border-radius: 25% 50% !important;
+} */
+
+.calculadora {
+    margin: 2%;
+    /* height: 30; */
+    display: grid;
+    grid-template: 4rem 3rem repeat(5, 4rem)/repeat(4, 4rem);
+    gap: .5%;
+    
+}
+
+
+.calculadora .pantalla {
+    width: 100%;
+    padding: 4%;
+    grid-column: -1/-5;
+    text-align: end;
+    background-color: rgba(42, 42, 42, 0.495);
+    color: #bebbbb;
+    overflow: hidden !important;
+}
+
+
+#primaria {
+    background-color: rgba(15, 15, 15, 0.495);
+    color: azure;
+    font-weight: 700;
+    font-size: large;
+}
+
+.secundaria {
+    grid-row-start: 2;
+}
+
+.clear,
+.igual {
+    grid-column: 1/3;
+}
