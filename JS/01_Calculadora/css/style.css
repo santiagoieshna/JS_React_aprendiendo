@@ -66,7 +66,7 @@ article {
     border-radius: 50% 50% !important;
 } */
 
-[type=button] {
+.calculadora button.btn {
     /* width: 100%;
     height: 100%; */
     display: flex;
@@ -135,22 +135,55 @@ y no se que parametro tocas */
     grid-row-start: 2;
 }
 
-.clear {
+.operator{
+    
+    background-color: #da9c1f   !important;
+}
+
+#clear {
     grid-column: 1/3;
-    border-radius: 50% 5% 5% 4%;
+    border-radius: 70% 5% 5% 4%;
 }
 .igual {
-    grid-column: 1/3;
-    border-radius: 4% 5% 5% 50%;
+    grid-column: span 2;
+    border-radius: 6% 5% 5% 60% !important;
+    /* background-color: red; */
 }
 
-
-[type=button]:hover {
+.calculadora .btn:hover,
+.calculadora .btn::selection {
     /* transition: all .3s ease-in-out; */
     transform: scale(1.04);
-    text-shadow: #00c7c4 0px 1px 7px;
+    text-shadow: #d3d3d3 0px 1px 7px;
+    user-select: none;
 
+}
+
+.calculadora .number:hover{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
-        0 2px 4px rgba(0, 236, 253, 0.386),
-        0 4px 8px rgba(0, 236, 253, 0.228);
+    0 2px 4px rgba(0, 236, 253, 0.386),
+    0 4px 8px rgba(0, 236, 253, 0.228);
+}
+
+.calculadora .operator:hover{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(199, 254, 0, 0.386),
+    0 4px 8px rgba(199, 254, 0, 0.228);
+}
+
+.calculadora .btn:active{
+    transform: scale(.9);
+}
+
+h1#tittleh1:hover,
+h1#tittleh1::selection{
+    text-shadow: #d3fffe 0px 0px 8px;
+    cursor: pointer;
+    background: none;
+    user-select: none;
+}
+
+h1#tittleh1:active{
+    transform: scale(.9);
+    
 }

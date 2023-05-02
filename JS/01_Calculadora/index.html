@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../CSS normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./calcular.png" type="image/x-icon">
+   
     <title>Calculadora</title>
 </head>
 
@@ -22,28 +23,28 @@
                 <div class="pantalla" id="primaria">Calculadora</div>
                 <div class="pantalla" id="secundaria">Version 1.0</div>
 
-                <input type="button" class="operator clear" value="AC" />
-                <input type="button" class="operator delete" value="DEL" />
-                <input type="button" class="operator multiplicar" value="*" />
-                <input type="button" value="1" class="number" />
-                <input type="button" value="2" class="number" />
-                <input type="button" value="3" class="number" />
-                <input type="button" class="operator dividir" value="/" />
-                <input type="button" value="4" class="number" />
-                <input type="button" value="5" class="number" />
-                <input type="button" value="6" class="number" />
-                <input type="button" class="operator suma" value="+" />
-                <input type="button" value="7" class="number" />
-                <input type="button" value="8" class="number" />
-                <input type="button" value="9" class="number" />
-                <input type="button" class="operator resta" value="-" />
-                <input type="button" class="operator igual" value="=" />
-                <input type="button" value="0" class="number" />
-                <input type="button" class="operator decimal" value="." />
+                <button id="clear" class="btn operator clear" >AC</button>
+                <button id="delete" class="btn operator delete" >DEL</button>
+                <button id="*" class="btn operator multiplicar">*</button>
+                <button id="1" class="btn number" >1</button>
+                <button id="2" class="btn number" >2</button>
+                <button id="3" class="btn number" >3</button>
+                <button id="/" class="btn operator dividir" >/</button>
+                <button id="4" class="btn number" >4</button>
+                <button id="5" class="btn number" >5</button>
+                <button id="6" class="btn number" >6</button>
+                <button id="+" class="btn operator suma" >+</button>
+                <button id="7" class="btn number" >7</button>
+                <button id="8" class="btn number" >8</button>
+                <button id="9" class="btn number" >9</button>
+                <button id="menos" class="btn operator resta" >-</button>
+                <button id="igual" class="btn operator igual">=</button>
+                <button id="0" class="btn number" >0</button>
+                <button id="." class="btn operator decimal" >.</button>
             </div>
         </article>
     </section>
-
+    <script src="./index.js"></script>
 </body>
 
 </html>
