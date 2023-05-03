@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #000;
+}
+
+.container{
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.cuadro{
+    width: 200px;
+    height: 200px;
+}
+
+.uno{
+    background-color: #F13929;
+    border-radius: 15px;
+}
+
+.dos{
+    background-color: #7250FF;
+    border-radius: 15px;
+}
+
+.tres{
+    background-color: #01D0FB;
+    border-radius: 15px;
+}
