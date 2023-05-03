@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="hola hipopotamo"></div>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis aliquid quasi vel, fugit ex atque reprehenderit fugiat. Quisquam molestias fugiat sed quaerat <span> delectus reprehenderit perferendis voluptatem, sit asperiores obcaecati et.</span></p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./icons/sombrero-de-cocinero.png"
+      type="image/x-icon"
+    />
+    <title>Menu Basico</title>
+  </head>
+  <body>
+    <!-- header>nav.menuSuperior>div.hamburguesa+div.logoReceta+(div.menubar>ul>(li>a[target="_blank"]{Opcion$})*4)+div.img.User -->
+    <header>
+    <section id="MenuSuperior">
+      <div class="hamburguesa">___<br />___<br />___</div>
+      <a class="logo" href="" target="_self">
+        <img id="logoImg" src="./icons/sombrero-de-cocinero.png" alt="logo" />
+        <h2>Para Comer</h2>
+      </a>
+      <nav id="NavMenuSuperior">
+        <ol class="menubar">
+          <li >
+            <a href="" class="nav-link" target="_blank">Sobre Nosotros</a>
+          </li>
+          <li >
+            <a href="" class="nav-link" target="_blank">Muro de Recetas</a>
+          </li>
+          <li >
+            <a href="" class="nav-link" target="_blank">Top 10</a>
+          </li>
+          <li >
+            <a href="" class="nav-link" target="_blank">Categorias</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="img User">
+        <img src="./icons/cocinero.png" alt="User" id="userImg" />
+      </div>
+    </section>
+    <section>
+        <nav>
+           
+        </nav>
+    </section>
+    </header>
+  </body>
 </html>
