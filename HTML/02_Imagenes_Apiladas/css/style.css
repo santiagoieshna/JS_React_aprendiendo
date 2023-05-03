@@ -1,0 +1,45 @@
+body{
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+
+.imagenes-container{
+    margin: 6.25rem auto;
+    width: 31.25rem;
+    display: flex;
+}
+
+.imagenes-container .imagen{
+    position: relative;
+    margin-right: -1.3rem;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.imagenes-container .imagen img{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.imagenes-container .imagen .nombre{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    min-width: 6.25rem;
+    width: 9.375rem;
+
+    position: relative;
+    top: -3.4375rem;
+    /* Hará lo mismo que position + top */
+    /* margin-top: -3.4375rem; */
+}
+
+.imagenes-container .imagen:hover .nombre{
+    display: flex;
+
+}
+
