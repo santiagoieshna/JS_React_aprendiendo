@@ -4,12 +4,16 @@ body{
     box-sizing: border-box; */
     font-family: sans-serif;
     background-color: aquamarine;
+    /* height: 100vh; */
 }
 
 .imagenes-container{
-    margin: 6.25rem auto;
-    width: 31.25rem;
+    /* margin: 6.25rem auto; */
+    /* width: 31.25rem; */
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagenes-container .imagen{
@@ -50,6 +54,7 @@ body{
 
 .imagenes-container .imagen:hover .nombre{
     display: flex;
+    
 
 }
 
