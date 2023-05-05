@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/charizard.png" type="image/x-icon" />
+    <title>Card Pokemon</title>
+  </head>
+  <body>
+    <!-- main>section.product-container>article.card -->
+    <main class="main-container">
+      <section class="products-container">
+        <article class="card">
+            <img class="card-header" src="img/fondoencabezado.svg" alt="fondoCard"/>
+            <!-- div.card-body>(div.card-body-contentimg>img.card-body-contentimg-img)+(h1.card-body-title>span)+p.card-body-text -->
+            <div class="card-body">
+                <div class="card-body-contentimg">
+                    <img class="card-body-contentimg-img" src="img/charizard.png" alt="Charizard" >
+                </div>
+                <h1 class="card-body-title">Charizar
+                    <span>#26</span>
+                </h1>
+                <p class="card-body-text">Coleccionable</p>
+            </div>
+            <!-- div.card-footer>(div.card-footer-info.info$>h3+img.imgfotter)*3 -->
+            <div class="card-footer">
+                <div class="card-footer-info info1">
+                    <h3>Poder</h3>
+                    <img class="imgfooter" src="img/fuego.png" alt="Poder" >
+                </div>
+                <div class="card-footer-info info2">
+                    <h3>Resistencia</h3>
+                    <img class="imgfooter" src="img/castillo.png" alt="Resistencia" >
+                </div>
+                <div class="card-footer-info info3">
+                    <h3>Bunos</h3>
+                    <img src="img/cofre.png" alt="Bonus" class="imgfooter">
+                </div>
+            </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
