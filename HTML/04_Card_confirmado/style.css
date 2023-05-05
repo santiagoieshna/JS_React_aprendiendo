@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #fefefe;
+}
+
+.card-confirm-container{
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #1c56a8;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-confirm-container .subcontaier{
+    width: 34rem;
+    background-color: #fefefe;
+    /* background-color: #9516c0; */
+    border-radius: .9rem;
+    padding: .8rem 1rem;
+    box-shadow: 0px 4px 10px rgba(10, 10, 107, 0.7);
+}
+
+.card-confirm-container .subcontaier .contenido{
+    /* background-color: #bbb; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex: auto;
+}
+
+/* .card-confirm-container .subcontaier .contenido .icon{
+    margin-right: 0.7rem;
+} */
+
+/* .card-confirm-container .subcontaier .contenido .mensaje{
+    padding: 1rem;
+} */
+.card-confirm-container .subcontaier .contenido .mensaje .title{
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    /* font-weight: bold; */
+}
+
+.card-confirm-container .subcontaier .contenido .icon img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.card-confirm-container .subcontaier .actions{
+    /* background-color: green; */
+    padding: .6rem 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.card-confirm-container .subcontaier .actions button{
+    border: none;
+    padding: .6rem 0;
+    border-radius: 5px;
+    min-width: 120px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.card-confirm-container .subcontaier .actions .btn-descargar{
+    background-color: #3157e2;
+    color: #eee;
+}
+
+.card-confirm-container .subcontaier .actions .btn-descargar:hover{
+    background-color: #506edb;
+}
+
+.card-confirm-container .subcontaier .actions .btn-volver{
+    border: 1px solid #ccc;
+    /* background-color: #fff; */
+}
+.card-confirm-container .subcontaier .actions .btn-volver:hover{
+   background-color: #e5e5e5;
+}
+
+@media (max-width:600px){
+    .card-confirm-container .subcontaier{
+        width: 70%;
+        margin-bottom: 0px;
+    }
+    .card-confirm-container .subcontaier .actions{
+        margin: 0 auto;
+        width: 70%;
+        flex-direction: column;
+    }
+}
