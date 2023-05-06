@@ -1,23 +1,127 @@
-body{
-  margin: 0;  
+:root {
+  --color1: #f8b78b;
+  --color2: #fcb173;
+}
+
+htm{
+  box-sizing: border-box; 
+  font-size: 62.5%;
+}
+
+*,*:before, *:after{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   padding: 0;
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: var(--color1);
+  background-image: url(./../img/fondoTop.svg), url(../img/fondoBotton.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
-
-// Imagen de la card(prducto)
-.card .card-body .card-body-contentimg .card-body-contentimg-img{
-    width: 9.375rem;
-    height: 9.375rem;
+.products-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
-// Imagenes de Pie de card
-.card .card-footer .card-footer-info .imgfooter{
-    width: 3.5rem;
-    height: 3.5rem;
+.products-container .card {
+  height: fit-content;
+  min-width: 20.5rem;
+  max-width: 32rem;
+
+  // padding: 1rem 0.5rem;
+  background-color: #e9e9e9;
+  border-radius: 16px;
+  overflow: hidden;
+
+  display: block;
+
+  -webkit-box-shadow: 1px 9px 24px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 9px 24px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 9px 24px -10px rgba(0, 0, 0, 0.75);
+
+  &-header {
+    // margin: -1rem;
+    margin: 0rem -.5rem -.3rem -.5rem;
+  }
+  &-body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px groove #fca848c5;
+    background-color: #F67C55;
+    &-contentimg{
+      // margin-top: -1.5rem;
+      border: .3rem solid #F67C55;
+      border-radius: 50%;
+      background-color: #FFD8C6;
+      box-shadow: 1px 0px 10px #F67C55;
+      // Imagen Card Producto
+      margin-top: calc(-3rem );
+      &-img{
+        // margin: -1rem;
+        width: 9.375rem;
+        height: 9.375rem;
+        padding: 1rem;
+      }
+    }
+    &-title{
+      margin-top: 2rem;
+      font-size: 2rem;
+      span{
+        color: var(--color2)
+      }
+    }
+    &-text{
+      font-size: .8rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+
+  &-footer {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // gap: 2.5rem;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // Imagen Card Footer
+      &-img{
+        width: 2.6rem;
+        height: 2.6rem;
+      }
+    }
+  }
 }
+// //imagent card cabecera
+// .products-container .card .card-header {
+//   margin: -0.5rem;
+//   // border-radius: 15px 15px 0 0 ;
+// }
 
+// .products-container .card .card-body {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
+// .products-container .card .card-footer {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-
-
+// .products-container .card .card-footer .card-footer-info {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
