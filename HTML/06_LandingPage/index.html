@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/logo/sombrero-de-cocinero.png"
+      type="image/x-icon"
+    />
+    <!-- Impor iconos de ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Landpage</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- header>(a>img.logo+h3)+ul.navigation>(li>a)*4 -->
+      <a href="" class="main-menu">
+        <ion-icon name="menu-outline" size="large"> </ion-icon>
+      </a>
+
+      <header class="main-header">
+        <a class="main-header-logo" href="">
+          <img
+            class="main-header-logo-img"
+            src="./img/logo/sombrero-de-cocinero.png"
+            alt="logo"
+          />
+          <h3 class="main-header-logo-title">Para Comer</h3>
+        </a>
+        <ul class="main-header-navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recetas</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </header>
+      <!-- section.content>(div.content-img>img)+div.text>h2>span{placer}+{ al paladar}^p+a.btn{Ver Recetas} -->
+      <section class="aboutus">
+        <article class="content">
+          <div class="content-img">
+            <img
+              class="imagen"
+              src="./img/img_comida/Hamburguesa_ingr.png"
+              alt=""
+            />
+          </div>
+          <div class="content-text">
+            <h2 class="content-text-tittle"><span>Placer</span> al paladar</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis tenetur temporibus eius, ipsum fugiat sequi commodi
+              unde molestias voluptatibus ullam incidunt possimus rerum atque.
+              Rerum exercitationem dolorem hic unde doloremque!
+            </p>
+            <a href="#" class="btn">Ver Recetas</a>
+          </div>
+        </article>
+        <article class="content">
+          <div class="content-text">
+            <h2 class="content-text-tittle"><span>Explora</span> Tus gustos</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis tenetur temporibus eius, ipsum fugiat sequi commodi
+              unde molestias voluptatibus ullam incidunt possimus rerum atque.
+              Rerum exercitationem dolorem hic unde doloremque!
+            </p>
+            <a href="#" class="btn">Top 10 Recetas</a>
+          </div>
+          <div class="content-img">
+            <img
+              class="imagen"
+              src="./img/img_comida/pizza_porcion_ingr.png"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="content">
+          <div class="content-img">
+            <img class="imagen" src="./img/img_comida/ensalada.png" alt="" />
+          </div>
+          <div class="content-text">
+            <h2 class="content-text-tittle"><span>Placer</span> al paladar</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis tenetur temporibus eius, ipsum fugiat sequi commodi
+              unde molestias voluptatibus ullam incidunt possimus rerum atque.
+              Rerum exercitationem dolorem hic unde doloremque!
+            </p>
+            <a href="#" class="btn">Categorias</a>
+          </div>
+        </article>
+      </section>
+      <!-- footer.footer>ul.sci>(li>a)*5 -->
+      <footer class="footer">
+        <ul class="sci">
+          <li>
+            <a href=""><ion-icon name="logo-github" size="large"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-facebook" size="large"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-twitter" size="large"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-instagram" size="large"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-tiktok" size="large"></ion-icon></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
