@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161623;
+}
+
+.containerCards-Recetas {
+  position: relative;
+}
+.containerCards-Recetas .card {
+  position: relative;
+  background-color: #232323;
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.containerCards-Recetas .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b6fcfd;
+  -webkit-clip-path: circle(12rem at 60% -5%);
+          clip-path: circle(12rem at 60% -5%);
+  transition: 0.5s;
+}
+.containerCards-Recetas .card:hover .imgBx {
+  transform: translateY(-50%) rotate(15deg);
+}
+.containerCards-Recetas .card:hover .contentBx {
+  height: 10rem;
+}
+.containerCards-Recetas .card:hover .contentBx .ingredientes {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+.containerCards-Recetas .card:hover .contentBx .categoria {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+.containerCards-Recetas .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(-20%);
+  transition-delay: 0.6s;
+}
+.containerCards-Recetas .card:hover::before {
+  -webkit-clip-path: circle(50% at 70% 10%);
+          clip-path: circle(50% at 70% 10%);
+  transition: 0.5s ease-out;
+}
+.containerCards-Recetas .card .imgBx {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s ease-in-out;
+  z-index: 100;
+}
+.containerCards-Recetas .card .imgBx img {
+  position: absolute;
+  padding: 0rem 1.25rem;
+  width: 280px;
+  transform: translate(0%, -50%);
+}
+.containerCards-Recetas .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6.25rem;
+  text-align: center;
+  transition: 1s;
+}
+.containerCards-Recetas .card .contentBx h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.containerCards-Recetas .card .contentBx .ingredientes,
+.containerCards-Recetas .card .contentBx .categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.containerCards-Recetas .card .contentBx .ingredientes h3,
+.containerCards-Recetas .card .contentBx .categoria h3 {
+  color: #eee;
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.containerCards-Recetas .card .contentBx .ingredientes span,
+.containerCards-Recetas .card .contentBx .categoria span {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0.2rem;
+  margin: 0 0.2rem;
+  height: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+  display: inline-block;
+  color: #666;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.containerCards-Recetas .card .contentBx .ingredientes span:hover,
+.containerCards-Recetas .card .contentBx .categoria span:hover {
+  color: #111;
+  transition: 0.8s;
+  background-color: #41f1dc;
+}
+.containerCards-Recetas .card .contentBx a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 2.2rem;
+  background-color: #b6fcfd;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #131313;
+  transform: translateY(4rem);
+  opacity: 0;
+  transition: 1s;
+}/*# sourceMappingURL=style.css.map */
