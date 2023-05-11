@@ -78,6 +78,9 @@ body {
       transition: 0.5s ease-in-out;
       //Z-index para que se vea por encima de las letras
       z-index: 100;
+      // Obra de D.Beltran
+      pointer-events: none;
+      // aspect-ratio: 1/1;
       img {
         position: absolute;
         padding: 0rem 1.25rem;

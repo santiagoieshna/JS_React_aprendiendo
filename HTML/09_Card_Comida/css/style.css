@@ -71,6 +71,7 @@ body {
   height: 220px;
   transition: 0.5s ease-in-out;
   z-index: 100;
+  pointer-events: none;
 }
 .containerCards-Recetas .card .imgBx img {
   position: absolute;
