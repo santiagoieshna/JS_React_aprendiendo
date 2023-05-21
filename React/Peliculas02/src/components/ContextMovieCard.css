@@ -1,0 +1,31 @@
+/* .contextmoviecard{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 1rem; 
+}
+.contextmoviecard h1{
+    text-align: center;
+    color: lightblue;
+} */
+.contextmoviecard{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 1.5rem;
+    justify-content: center;
+}
+
+@media (max-width: 600px){
+    /* Para que solo sea una columna 
+    cuando llegue a 600px de ancho */
+    .contextmoviecard{
+        grid-template-columns: 100%;
+    }
+}

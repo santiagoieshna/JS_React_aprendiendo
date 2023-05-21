@@ -1,0 +1,50 @@
+.moviecard{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.linkMovie{
+    /* width: fit-content; */
+    /* height: fit-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moviecard .linkMovie .portada{
+    width: 230px;
+    height: 345px;
+    border-radius: 8px;
+}
+
+.moviecard .titleMovie{
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+}
+.moviecard:hover {   
+    /* color: blueviolet; */
+    transform: translateY(-10px);
+    transition: .5s;
+}
+.moviecard:hover .titleMovie{   
+    color: rgb(128, 44, 206);
+    /* text-shadow: 0 0 8px  rgba(121, 115, 115, 0.815); */
+    
+}
+
+
+@media (max-width: 600px) {
+    .linkMovie{
+        width: 100%;
+    }
+    .moviecard .linkMovie .portada{
+        width: 70%;
+        height: auto;
+    }
+}
